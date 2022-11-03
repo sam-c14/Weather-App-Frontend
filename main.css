@@ -82,7 +82,7 @@ label {
   cursor: pointer;
 }
 .city-list li:hover {
-  transform: scaleY(1.2);
+  transform: scaleY(1.1);
 }
 .details {
   padding-top: 1.5rem;
@@ -114,6 +114,25 @@ sup {
   position: absolute;
   margin-left: 0.2rem;
 }
+@media (min-width: 1280px) {
+  .cities {
+    font-size: 1.15rem;
+  }
+  .weather-info-container {
+    padding-left: 2%;
+    width: 60%;
+  }
+  .weather-search-details {
+    width: 40%;
+  }
+  label {
+    padding-block: 1.4rem;
+    padding-inline: 1.2rem;
+  }
+  .details ul li p {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 1024px) {
   .weather-info-container {
     padding-left: 2%;
@@ -121,10 +140,8 @@ sup {
   }
   .weather-search-details {
     width: 40%;
-    padding-inline: 0.5rem;
   }
   label {
-    left: 80%;
     padding-block: 1.4rem;
     padding-inline: 1.2rem;
   }
